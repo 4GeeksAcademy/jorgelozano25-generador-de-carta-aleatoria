@@ -1,1 +1,98 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(https://img.freepik.com/vector-premium/fondo-mesa-poker-color-verde_47243-1094.jpg?w=1060);
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.button {
+  position: relative;
+  background-image: url(https://cdn.pixabay.com/photo/2016/09/22/16/41/texture-1687721_640.jpg);
+  background-size: cover;
+  border: solid #ffffff;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: fantasy;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.button:after {
+  content: "";
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.symbolTop,
+.symbolBottom {
+  font-size: 50px;
+  position: absolute;
+  color: black;
+}
+.symbolTop {
+  left: 10px;
+  top: 10px;
+}
+
+.number {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: black;
+}
+
+.symbolBottom {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.timer {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}

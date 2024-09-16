@@ -13,17 +13,33 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="controls">
+      <label for="width">Width:</label>
+      <input type="number" id="width" placeholder="300" value="300" min="100" />
+
+      <label for="height">Height:</label>
+      <input
+        type="number"
+        id="height"
+        placeholder="400"
+        value="400"
+        min="100"
+      />
+    </div>
+    <div>
+      <button class="button" id="generate">Generar Carta</button>
+    </div>
+    <div class="containerCard">
+      <div class="card">
+        <div class="symbolTop"></div>
+        <div class="number"></div>
+        <div class="symbolBottom"></div>
       </div>
     </div>
+    <div class="timer">
+      Siguiente carta en: <span id="countdown">10</span> segundos
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
